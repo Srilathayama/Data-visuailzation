@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pie Charts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Pie Charts</h1>
+    {% for chart in pie_charts %}
+    <div class="chart-container">
+        <!-- Each pie chart will be displayed dynamically -->
+        {{ chart | safe }}
+    </div>
+    {% endfor %}
+</body>
+</html>

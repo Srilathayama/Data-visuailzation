@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Entry Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Data Entry Home Page</h1>
+    <ul>
+        <li><a href="{{ url_for('form') }}">Enter Data via Form</a></li>
+        <li><a href="{{ url_for('excel_upload') }}">Upload Excel File</a></li>
+        <li><a href="{{ url_for('pie_chart') }}">View Pie Chart</a></li>
+    </ul>
+</body>
+</html>
